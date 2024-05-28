@@ -1,0 +1,256 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+.nav {
+    display: flex;
+    background-color: #000;
+    color: #fff;
+    height: 40px;
+    width: 95%;
+    margin-left: 30px;
+    margin-top: 20px;
+    border-radius: 5px;
+    justify-content: space-around;
+    padding-top: 20px;
+    text-transform: capitalize;
+}
+
+.navheading {
+    color: #fff;
+    text-decoration: none;
+    text-align: right;
+    text-transform: capitalize;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.link>a {
+    color: #fff;
+    text-decoration: none;
+    padding-left: 50px;
+    text-transform: capitalize;
+}
+
+.blue {
+    width: 65px;
+    height: 20px;
+    background-color: rgb(229, 255, 0);
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.blue>a {
+    color: #000;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+a:hover {
+    color: rgb(127, 255, 0);
+
+}
+
+.blue>a:hover {
+    color: rgb(255, 0, 0);
+}
+
+.navheading:hover {
+    color: rgb(127, 255, 0);
+}
+
+.container {
+    display: flex;
+    /* flex-direction: column; */
+}
+
+.left {
+    text-transform: uppercase;
+    padding: 150px;
+    font-size: 33px;
+}
+
+.color {
+    color: #00f;
+}
+
+.right {
+    background-color: #000;
+    height: 275px;
+    width: 300px;
+    margin: 150px;
+    border-radius: 10px;
+    color: #fff;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.right>a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.mr {
+    text-align: left;
+}
+
+.right>a:hover {
+    background-color: #00f;
+    border-radius: 10px;
+
+}
+@media(max-width:1109px) {
+    .container {
+        flex-direction: column;
+        margin-bottom: 100px;
+    }
+
+    .nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navheading {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 0px;
+    }
+
+    .left {
+        font-size: 33px;
+        padding-left: 400px;
+        padding-top: 100px;
+    }
+    .right {
+        margin-left: 400px;
+        margin-top: 0px;
+    }
+}
+
+@media(max-width:992px) {
+    .container {
+        flex-direction: column;
+        margin-bottom: 100px;
+    }
+
+    .nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navheading {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 0px;
+    }
+
+    .left {
+        font-size: 33px;
+        padding-left: 300px;
+    }
+
+
+    .right {
+        margin-left: 320px;
+        margin-top: 0px
+        ;
+    }
+}
+@media(max-width:750px) {
+    .container {
+        flex-direction: column;
+        margin-bottom: 100px;
+    }
+
+    .nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navheading {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left {
+        font-size: 33px;
+        padding-left: 220px;
+    }
+
+    .right {
+        margin-left: 250px;
+    }
+}
+@media(max-width:576px) {
+    .container {
+        flex-direction: column;
+        margin-bottom: 100px;
+    }
+
+    .nav {
+        flex-direction: column;
+        text-align: center;
+        padding-left: 0px;
+    }
+
+    .navheading {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left {
+        font-size: 33px;
+        padding-left: 150px;
+    }
+
+    .right {
+        margin-left: 150px;
+    }
+}
+
+@media(max-width:450px) {
+    .container {
+        flex-direction: column;
+        margin-bottom: 100px;
+    }
+
+    .nav {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .navheading {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left {
+        font-size: 28px;
+        padding-left: 100px;
+    }
+
+    .right {
+        margin-left: 100px;
+    }
+}
